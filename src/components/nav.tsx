@@ -15,14 +15,14 @@ interface MenuProps {
   itemClassNames: string;
 }
 
-export const Menu = ({ containerClassNames, itemClassNames }: MenuProps) => {
+export const Nav = ({ containerClassNames, itemClassNames }: MenuProps) => {
   return (
-    <div className={containerClassNames}>
+    <nav className={containerClassNames}>
       {menuItems.map((item) => (
-        <span className={cn("hover:text-primary transition delay-200",itemClassNames)} key={item}>
+        <span className={cn("hover:text-primary transition duration-200",itemClassNames)} key={item}>
           {item}
         </span>
       ))}
-    </div>
+    </nav>
   );
 };

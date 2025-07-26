@@ -1,7 +1,7 @@
 import Container from "@/components/container";
 import Image from "next/image";
 import BurgerMenu from "@/components/burger-menu";
-import { Menu } from "@/components/menu";
+import { Nav } from "@/components/nav";
 import {Button} from "@/components/ui/button";
 
 export const Header = () => {
@@ -24,7 +24,7 @@ export const Header = () => {
             </div>
           </div>
 
-          <Menu
+          <Nav
             containerClassNames="hidden flex-wrap lg:flex items-center lg:gap-x-[20px] xl:gap-x-[24px] 2xl:gap-x-[27px]"
             itemClassNames="2xl:text-[24px] xl:text-[20px] lg:text-[18px]"
           />
