@@ -1,9 +1,13 @@
 import { Header } from "@/components/sections/header";
+import Title from "@/components/sections/title";
 
 export default function Home() {
   return (
     <div className="min-h-screen pt-[27px]">
       <Header />
+      <main>
+        <Title />
+      </main>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
         accusantium cupiditate debitis exercitationem explicabo molestiae neque
