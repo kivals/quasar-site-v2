@@ -5,17 +5,17 @@ import Container from "@/components/container";
 
 export default function Title() {
   return (
-    <section className="2xl:pt-[70px] xl:pt-[60px] lg:pt-[50] pt-[35px]">
+    <section className="mb-10 pt-[35px] lg:mb-24 lg:pt-[50] xl:pt-[60px] 2xl:mb-28 2xl:pt-[70px]">
       <Container>
         <h2 className="text-center text-[28px] font-medium lg:text-[40px] xl:text-[60px] 2xl:text-[80px]">
           Системный подход к разработке программного обеспечения
         </h2>
       </Container>
 
-      <div className="relative overflow-hidden 2xl:-mt-16 xl:-mt-12 mt-2">
+      <div className="relative mt-2 overflow-hidden pb-16 lg:pb-28 xl:-mt-12 2xl:-mt-16 2xl:pb-32">
         <Globe className="" />
         <Container>
-          <div className="flex flex-col gap-x-3 rounded-[40px] bg-white pt-5 pb-8.5 drop-shadow-[0_0_50px_#34538980] lg:flex-row mt-40 lg-mt-70 lg:mt-[350px] xl:mt-[350px] 2xl:mt-[450px] xl:flex xl:p-20">
+          <div className="lg-mt-70 mt-40 flex flex-col gap-x-3 rounded-[40px] bg-white pt-5 pb-8.5 drop-shadow-[0_0_20px_#34538980] lg:mt-[350px] lg:flex-row lg:drop-shadow-[0_0_30px_#34538980] xl:mt-[350px] xl:flex xl:p-20 2xl:mt-[450px] 2xl:drop-shadow-[0_0_50px_#34538980]">
             <div className="flex-1">
               <div className="grid w-max grid-cols-[auto_auto] items-center gap-x-7.5 max-xl:mx-auto max-xl:justify-items-center max-xl:px-13 xl:gap-x-2.5">
                 <Image

@@ -1,5 +1,6 @@
 import { Header } from "@/components/sections/header";
 import Title from "@/components/sections/title";
+import NewsSection from "@/components/sections/news-section";
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
       <Header />
       <main>
         <Title />
+        <NewsSection />
       </main>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
