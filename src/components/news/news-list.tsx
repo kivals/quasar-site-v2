@@ -28,15 +28,15 @@ interface NewsItemProps {
 
 function NewsItem({ title, text, date }: NewsItemProps) {
   return (
-    <div className="rounded-[30px] bg-white lg:p-6 2xl:p-9">
-      <div className="mb-2.5 flex items-center justify-between font-medium lg:text-[28px] xl:text-[34px] 2xl:text-[40px]">
+    <div className="rounded-[30px] bg-white p-4 lg:p-6 2xl:p-9">
+      <div className="mb-2.5 flex items-center justify-between font-medium text-[18px] lg:text-[28px] xl:text-[34px] 2xl:text-[40px]">
         <p>{title}</p>
         <span className="text-black/50">{date}</span>
       </div>
-      <div className="mb-2.5 font-light lg:text-[22px] xl:text-[26px] 2xl:text-[32px]">
+      <div className="mb-2.5 font-light text-[18px] lg:text-[22px] xl:text-[26px] 2xl:text-[32px]">
         {text}
       </div>
-      <div className="flex justify-end">
+      <div className="hidden lg:flex justify-end">
         <SearchButton>Читать</SearchButton>
       </div>
     </div>

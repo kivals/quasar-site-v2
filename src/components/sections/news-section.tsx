@@ -6,7 +6,9 @@ export default function NewsSection() {
   return (
     <section className="mb-28">
       <Container>
-        <SectionTitle>Новости</SectionTitle>
+        <div className="hidden lg:block">
+          <SectionTitle>Новости</SectionTitle>
+        </div>
         <News />
       </Container>
     </section>

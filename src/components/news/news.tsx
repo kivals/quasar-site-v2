@@ -22,7 +22,7 @@ function News() {
   }, [selectedYear, selectedType]);
 
   return (
-    <div className="flex gap-x-8">
+    <div className="flex flex-col gap-y-5 lg:flex-row gap-x-8">
       <NewsFilterSidebar
         types={types}
         years={years}
