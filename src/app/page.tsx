@@ -6,6 +6,8 @@ import { Services } from "@/components/sections/services";
 import { Products } from "@/components/sections/products";
 import Certifications from "@/components/sections/certifications";
 import Partners from "@/components/sections/partners";
+import ConsultForm from "@/components/consult-form";
+import Consultation from "@/components/sections/consultation";
 
 export default function Home() {
   return (
@@ -19,6 +21,7 @@ export default function Home() {
         <Certifications />
         <Partners />
         <NewsSection />
+        <Consultation />
       </main>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
