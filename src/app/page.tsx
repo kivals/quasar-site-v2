@@ -5,6 +5,7 @@ import { Trusted } from "@/components/sections/trusted";
 import { Services } from "@/components/sections/services";
 import { Products } from "@/components/sections/products";
 import Certifications from "@/components/sections/certifications";
+import Partners from "@/components/sections/partners";
 
 export default function Home() {
   return (
@@ -12,11 +13,12 @@ export default function Home() {
       <Header />
       <main>
         <Title />
-        <NewsSection />
         <Trusted />
         <Services />
         <Products />
         <Certifications />
+        <Partners />
+        <NewsSection />
       </main>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
