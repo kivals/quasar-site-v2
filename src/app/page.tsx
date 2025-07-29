@@ -3,6 +3,7 @@ import Title from "@/components/sections/title";
 import NewsSection from "@/components/sections/news-section";
 import { Trusted } from "@/components/sections/trusted";
 import { Services } from "@/components/sections/services";
+import {Products} from "@/components/sections/products";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <NewsSection />
         <Trusted />
         <Services />
+        <Products />
       </main>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
