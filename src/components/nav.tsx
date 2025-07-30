@@ -1,13 +1,13 @@
-import {cn} from "@/shared/lib/utils";
+import { cn } from "@/shared/lib/utils";
 
 const menuItems = [
-  "Компания",
-  "Продукты",
-  "Услуги",
-  "Партнеры",
-  "Новости",
-  "Контакты",
-  "Карьера",
+  { name: "Компания", url: "#company" },
+  { name: "Продукты", url: "#products" },
+  { name: "Услуги", url: "#services" },
+  { name: "Партнеры", url: "#partners" },
+  { name: "Новости", url: "#news" },
+  { name: "Контакты", url: "#contacts" },
+  { name: "Карьера", url: "#" },
 ];
 
 interface MenuProps {
@@ -18,10 +18,17 @@ interface MenuProps {
 export const Nav = ({ containerClassNames, itemClassNames }: MenuProps) => {
   return (
     <nav className={containerClassNames}>
-      {menuItems.map((item) => (
-        <span className={cn("hover:text-primary transition duration-200",itemClassNames)} key={item}>
-          {item}
-        </span>
+      {menuItems.map(({ name, url }) => (
+        <a
+          className={cn(
+            "focus:text-primary hover:text-primary cursor-pointer transition duration-200",
+            itemClassNames,
+          )}
+          key={name}
+          href={url}
+        >
+          {name}
+        </a>
       ))}
     </nav>
   );

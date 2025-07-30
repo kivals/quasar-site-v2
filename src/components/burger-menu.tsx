@@ -21,7 +21,7 @@ export default function BurgerMenu({ classNames }: ClassNames) {
       <SheetTrigger className={classNames} asChild>
         <Menu className="size-6" />
       </SheetTrigger>
-      <SheetContent style={{ overflowY: "scroll", gap: '10px' }}>
+      <SheetContent style={{ overflowY: "scroll", gap: '10px', width: '100%' }}>
         <SheetHeader>
           <SheetTitle>
             <div className="flex items-center gap-1">

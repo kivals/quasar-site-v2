@@ -34,7 +34,7 @@ function TrustedItem({ src }: { src: string }) {
         alt="MinStroy logo"
         width={250}
         height={250}
-        className="object-contain opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+        className="object-contain transition duration-300 lg:opacity-50 lg:grayscale lg:hover:opacity-100 lg:hover:grayscale-0"
       />
     </div>
   );

@@ -5,7 +5,7 @@ import { cn } from "@/shared/lib/utils";
 
 export default function Contacts() {
   return (
-    <section>
+    <section id="contacts">
       <Container>
         <div className="flex flex-col lg:flex-row">
           <div className="w-full shrink-0 bg-[#494F58] px-8 py-8 lg:w-[50%] lg:px-12 lg:py-10 2xl:px-16 2xl:py-12">

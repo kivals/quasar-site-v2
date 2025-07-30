@@ -2,11 +2,10 @@ import { PropsWithChildren } from "react";
 import Container from "@/components/container";
 import { Button } from "@/components/ui/button";
 import SectionTitle from "@/components/section-title";
-import { ServicesBackground } from "@/components/services-background";
 
 function ServiceItem({ children }: PropsWithChildren) {
   return (
-    <div className="flex flex-col rounded-[30px] bg-white/80 px-3 py-4 backdrop-blur-3xl max-xl:items-center max-xl:text-center justify-center lg:justify-end xl:px-8 xl:py-10 2xl:px-11 2xl:py-15">
+    <div className="flex flex-col justify-center rounded-[30px] bg-white/80 px-3 py-4 backdrop-blur-3xl max-xl:items-center max-xl:text-center lg:justify-end xl:px-8 xl:py-10 2xl:px-11 2xl:py-15">
       <p className="ce text-center text-[24px] xl:text-[32px] 2xl:text-[40px]">
         {children}
       </p>
@@ -19,8 +18,11 @@ function ServiceItem({ children }: PropsWithChildren) {
 
 export function Services() {
   return (
-    <Container>
-      <div className="relative mt-8.5 xl:mt-30">
+    <section
+      id="services"
+      className="fit mt-8.5 bg-[url('/images/bg/services-bg.png')] bg-cover bg-center xl:mt-30"
+    >
+      <Container>
         <SectionTitle>Услуги</SectionTitle>
 
         <div className="mt-5 grid grid-rows-2 gap-2.5 max-xl:mx-5 xl:grid-rows-[auto_auto] xl:gap-7.5 xl:drop-shadow-[0_0_50px_#00000020]">
@@ -37,13 +39,7 @@ export function Services() {
             <ServiceItem>Разработка сайтов</ServiceItem>
           </div>
         </div>
-
-        <div className="absolute inset-0 -z-10 overflow-clip xl:hidden">
-          <div className="absolute -top-62 -left-80">
-            <ServicesBackground />
-          </div>
-        </div>
-      </div>
-    </Container>
+      </Container>
+    </section>
   );
 }

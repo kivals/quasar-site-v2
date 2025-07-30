@@ -4,7 +4,7 @@ import News from "@/components/news/news";
 
 export default function NewsSection() {
   return (
-    <section className="mb-28">
+    <section id="news" className="mb-28">
       <Container>
         <div className="hidden lg:block">
           <SectionTitle>Новости</SectionTitle>

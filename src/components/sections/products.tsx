@@ -4,7 +4,7 @@ import SectionTitle from "@/components/section-title";
 
 export function Products() {
   return (
-    <section className="mt-8.5 mb-12 lg:bg-[url('/images/bg/product-bg.png')] xl:mt-19">
+    <section id="products" className="mt-8.5 mb-12 lg:bg-[url('/images/bg/product-bg.png')] xl:mt-19">
       <Container>
         <SectionTitle>Продукты</SectionTitle>
 

@@ -18,7 +18,7 @@ const partnerLogos = [
 
 export default function Partners() {
   return (
-    <section className="mb-28">
+    <section id="partners" className="mb-28">
       <Container>
         <SectionTitle>Партнеры</SectionTitle>
         <p className="mx-auto mb-5 max-w-[1110px] text-center text-[24px] xl:text-[32px] 2xl:text-[40px]">
@@ -26,7 +26,7 @@ export default function Partners() {
           структуры по всей России
         </p>
 
-        <div className="grid place-items-center grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-5">
+        <div className="grid grid-cols-2 place-items-center gap-6 sm:grid-cols-3 md:grid-cols-5">
           {partnerLogos.map((logo, index) => (
             <PartnerItem
               key={index}
@@ -53,7 +53,7 @@ function PartnerItem({ src, className }: { className?: string; src: string }) {
         alt=""
         width={250}
         height={250}
-        className="object-contain opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+        className="object-contain transition duration-300 lg:opacity-50 lg:grayscale lg:hover:opacity-100 lg:hover:grayscale-0"
       />
     </div>
   );
