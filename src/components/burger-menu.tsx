@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Sheet,
   SheetClose,
@@ -14,14 +16,24 @@ import Image from "next/image";
 import { Menu } from "lucide-react";
 import { ClassNames } from "@/shared/types/class-names";
 import { Nav } from "@/components/nav";
+import { useState } from "react";
 
 export default function BurgerMenu({ classNames }: ClassNames) {
+  const [open, setOpen] = useState(false);
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   return (
-    <Sheet>
-      <SheetTrigger className={classNames} asChild>
+    <Sheet open={open} onOpenChange={setOpen}>
+      <SheetTrigger
+        className={classNames}
+        onClick={() => setOpen(true)}
+        asChild
+      >
         <Menu className="size-6" />
       </SheetTrigger>
-      <SheetContent style={{ overflowY: "scroll", gap: '10px', width: '100%' }}>
+      <SheetContent style={{ overflowY: "scroll", gap: "10px", width: "100%" }}>
         <SheetHeader>
           <SheetTitle>
             <div className="flex items-center gap-1">
@@ -45,6 +57,7 @@ export default function BurgerMenu({ classNames }: ClassNames) {
         <Nav
           containerClassNames="px-4 flex flex-col gap-y-2 text-[30px]"
           itemClassNames="font-medium"
+          onLinkClick={handleClose}
         />
         <SheetFooter>
           <Button className="h-[50px] rounded-[20px] font-semibold text-white">

@@ -13,9 +13,10 @@ const menuItems = [
 interface MenuProps {
   containerClassNames: string;
   itemClassNames: string;
+  onLinkClick?: () => void;
 }
 
-export const Nav = ({ containerClassNames, itemClassNames }: MenuProps) => {
+export const Nav = ({ containerClassNames, itemClassNames, onLinkClick }: MenuProps) => {
   return (
     <nav className={containerClassNames}>
       {menuItems.map(({ name, url }) => (
@@ -26,6 +27,7 @@ export const Nav = ({ containerClassNames, itemClassNames }: MenuProps) => {
           )}
           key={name}
           href={url}
+          onClick={onLinkClick}
         >
           {name}
         </a>
