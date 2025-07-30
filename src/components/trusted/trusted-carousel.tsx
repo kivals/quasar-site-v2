@@ -7,7 +7,7 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
-import { cn } from "@/lib/utils";
+import { cn } from "@/shared/lib/utils";
 
 function TrustedItem() {
   return (

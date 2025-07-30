@@ -3,6 +3,7 @@
 import createGlobe, { COBEOptions } from "cobe";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { cn } from "@/shared/lib/utils";
+/* eslint-disable @typescript-eslint/no-explicit-any */
 
 const GLOBE_CONFIG: COBEOptions = {
   width: 800,

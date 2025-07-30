@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { cn } from "@/shared/lib/utils";
-import SectionTitle from "@/components/section-title";
 
 interface NewsFilterSidebarProps {
   types: string[];
@@ -69,7 +68,7 @@ function FilterPart<T extends string | number>({
             <Button
               onClick={() => onChange(v)}
               className={cn(
-                "text-accent w-[110px] rounded-[30px] bg-transparent py-1 text-black/50 uppercase lg:normal-case shadow-none lg:rounded-[20px] lg:py-8 lg:text-[22px] xl:w-[230px] xl:text-[26px] 2xl:w-[273px] 2xl:text-[32px]",
+                "text-accent w-[110px] rounded-[30px] bg-transparent py-1 text-black/50 uppercase shadow-none lg:rounded-[20px] lg:py-8 lg:text-[22px] lg:normal-case xl:w-[230px] xl:text-[26px] 2xl:w-[273px] 2xl:text-[32px]",
                 selectedValue === v && "bg-primary text-white",
               )}
             >

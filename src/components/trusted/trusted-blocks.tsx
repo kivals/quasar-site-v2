@@ -22,17 +22,6 @@ function TrustedBlocks() {
   return (
     <div className="flex justify-center">
       <TrustedCarousel className="block" />
-      {/*<TrustedGrid className="lg:hidden" />*/}
-    </div>
-  );
-}
-
-function TrustedGrid({ className }: { className?: string }) {
-  return (
-    <div className={cn("grid grid-cols-2 gap-4 px-4", className)}>
-      {logos.map((src, i) => (
-        <TrustedItem src={src} key={i} />
-      ))}
     </div>
   );
 }
@@ -70,7 +59,7 @@ function TrustedCarousel({ className }: { className?: string }) {
               className="pl-1 lg:basis-1/4 xl:basis-1/4 2xl:basis-1/6"
             >
               <div className="py-5">
-                <TrustedItem src={src}/>
+                <TrustedItem src={src} />
               </div>
             </CarouselItem>
           ))}
@@ -79,18 +68,20 @@ function TrustedCarousel({ className }: { className?: string }) {
       {/* Mobile version */}
       <div className="block lg:hidden">
         <CarouselContent className="-ml-1 gap-x-3">
-          {Array.from({ length: Math.ceil(logos.length / 4) }).map((_, groupIndex) => {
-            const group = logos.slice(groupIndex * 4, groupIndex * 4 + 4);
-            return (
-              <CarouselItem key={groupIndex} className="">
-                <div className="grid grid-cols-2 gap-2 py-5">
-                  {group.map((src, i) => (
-                    <TrustedItem key={i} src={src} />
-                  ))}
-                </div>
-              </CarouselItem>
-            )
-          })}
+          {Array.from({ length: Math.ceil(logos.length / 4) }).map(
+            (_, groupIndex) => {
+              const group = logos.slice(groupIndex * 4, groupIndex * 4 + 4);
+              return (
+                <CarouselItem key={groupIndex} className="">
+                  <div className="grid grid-cols-2 gap-2 py-5">
+                    {group.map((src, i) => (
+                      <TrustedItem key={i} src={src} />
+                    ))}
+                  </div>
+                </CarouselItem>
+              );
+            },
+          )}
         </CarouselContent>
       </div>
     </Carousel>

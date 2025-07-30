@@ -8,7 +8,7 @@ export default function Contacts() {
     <section>
       <Container>
         <div className="flex flex-col lg:flex-row">
-          <div className="w-full bg-[#494F58] shrink-0 px-8 py-8 lg:w-[50%] lg:px-12 lg:py-10 2xl:px-16 2xl:py-12">
+          <div className="w-full shrink-0 bg-[#494F58] px-8 py-8 lg:w-[50%] lg:px-12 lg:py-10 2xl:px-16 2xl:py-12">
             <div className="mb-5 flex gap-x-8">
               <Image
                 src="/images/logo.png"
@@ -29,7 +29,7 @@ export default function Contacts() {
               <span>
                 Общество с ограниченной ответственностью «КВАЗАР»: ИНН
                 7716913371 ОГРН 1187746525108 КПП 770501001 р/с
-                40702810801500052303 "ООО «Банк Точка»" БИК 044525104 к/с
+                40702810801500052303 ООО Банк Точка БИК 044525104 к/с
                 30101810745374525104
               </span>
             </ContactCard>
@@ -55,12 +55,12 @@ export default function Contacts() {
               </ContactCard>
             </div>
           </div>
-          <div className="overflow-hidden w-full lg:max-h-full">
+          <div className="w-full overflow-hidden lg:max-h-full">
             <iframe
               src="https://yandex.ru/map-widget/v1/?ll=37.639177%2C55.748493&z=16.93&pt=37.639177,55.748493,pm2rdm"
               width="560"
               allowFullScreen={true}
-              className="pointer-events-none lg:max-h-full h-full w-full"
+              className="pointer-events-none h-full w-full lg:max-h-full"
             />
           </div>
           {/*<div className="h-[250px] w-full bg-[url('/images/bg/contacts-bg2.png')] bg-right bg-no-repeat lg:h-auto lg:w-[50%]"></div>*/}
