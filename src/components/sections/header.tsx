@@ -2,20 +2,20 @@ import Container from "@/components/container";
 import Image from "next/image";
 import BurgerMenu from "@/components/burger-menu";
 import { Nav } from "@/components/nav";
-import {Button} from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
 
 export const Header = () => {
   return (
     <Container>
-      <header className="2xl:px-0 py-4">
+      <header className="bg-background fixed top-0 z-10 w-full px-8 py-4 lg:w-auto lg:px-0">
         <div className="flex items-center justify-between gap-x-2">
-          <div className="w-full lg:w-auto flex items-center justify-between lg:justify-start lg:gap-2">
+          <div className="flex w-full items-center justify-between lg:w-auto lg:justify-start lg:gap-2">
             <Image
               src="/images/logo.png"
               width="25"
               height="25"
               alt="Логотип в виде галактики"
-              className="size-[25px] 2xl:size-[50px] invert"
+              className="size-[25px] invert 2xl:size-[50px]"
             />
             <span className="text-[27px] 2xl:text-[52px]">Quasar</span>
 
@@ -29,7 +29,9 @@ export const Header = () => {
             itemClassNames="2xl:text-[24px] xl:text-[20px] lg:text-[18px]"
           />
 
-          <Button className="hidden 2xl:h-[70px] xl:h-[60px] lg:h-[50px] lg:flex text-white rounded-[20px] 2xl:text-[24px] font-semibold">Обратная связь</Button>
+          <Button className="hidden rounded-[20px] font-semibold text-white lg:flex lg:h-[50px] xl:h-[60px] 2xl:h-[70px] 2xl:text-[24px]">
+            Обратная связь
+          </Button>
         </div>
       </header>
     </Container>

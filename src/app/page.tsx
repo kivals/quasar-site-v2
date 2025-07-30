@@ -12,7 +12,7 @@ import Contacts from "@/components/sections/contacts";
 
 export default function Home() {
   return (
-    <div className="min-h-screen pt-[27px]">
+    <div className="min-h-screen">
       <Header />
       <main>
         <Title />
