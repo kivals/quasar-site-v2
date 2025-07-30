@@ -6,8 +6,8 @@ import { Button } from "@/components/ui/button";
 
 export const Header = () => {
   return (
-    <Container>
-      <header className="bg-background fixed top-0 z-10 w-full px-8 py-4 lg:w-auto lg:px-0">
+    <header className="bg-background fixed top-0 z-10 w-full px-8 py-4 lg:px-0">
+      <Container>
         <div className="flex items-center justify-between gap-x-2">
           <div className="flex w-full items-center justify-between lg:w-auto lg:justify-start lg:gap-2">
             <Image
@@ -33,7 +33,7 @@ export const Header = () => {
             Обратная связь
           </Button>
         </div>
-      </header>
-    </Container>
+      </Container>
+    </header>
   );
 };
