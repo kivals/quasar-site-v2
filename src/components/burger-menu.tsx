@@ -55,7 +55,7 @@ export default function BurgerMenu({ classNames }: ClassNames) {
           </SheetDescription>
         </SheetHeader>
         <Nav
-          containerClassNames="px-4 flex flex-col gap-y-2 text-[30px]"
+          containerClassNames="px-4 flex flex-col gap-y-4 text-[40px]"
           itemClassNames="font-medium"
           onLinkClick={handleClose}
         />
