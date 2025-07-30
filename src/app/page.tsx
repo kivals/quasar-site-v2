@@ -8,6 +8,7 @@ import Certifications from "@/components/sections/certifications";
 import Partners from "@/components/sections/partners";
 import ConsultForm from "@/components/consult-form";
 import Consultation from "@/components/sections/consultation";
+import Career from "@/components/sections/career";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <Partners />
         <NewsSection />
         <Consultation />
+        <Career />
       </main>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
