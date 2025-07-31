@@ -4,7 +4,7 @@ import Container from "@/components/container";
 
 export default function Career() {
   return (
-    <section className="mb-28">
+    <section className="mb-5 lg:mb-28">
       <SectionTitle>Карьера</SectionTitle>
       <div className="items-center bg-[url('/images/bg/career-bg.jpg')] bg-center bg-no-repeat py-[44px] lg:py-[88px]">
         <Container>

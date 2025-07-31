@@ -8,16 +8,16 @@ export default function Contacts() {
     <section id="contacts">
       <Container>
         <div className="flex flex-col lg:flex-row">
-          <div className="w-full shrink-0 bg-[#494F58] px-8 py-8 lg:w-[50%] lg:px-12 lg:py-10 2xl:px-16 2xl:py-12">
-            <div className="mb-5 flex gap-x-8">
+          <div className="w-full shrink-0 bg-[#494F58] px-3 py-8 lg:w-[50%] lg:px-12 lg:py-10 2xl:px-16 2xl:py-12">
+            <div className="mb-5 flex gap-x-3 lg:gap-x-8">
               <Image
                 src="/images/logo.png"
                 alt="Quasar logo"
                 height={140}
                 width={140}
-                className="size-[30px] lg:size-[40px] xl:size-[140px]"
+                className="size-[60px] lg:size-[40px] xl:size-[140px]"
               />
-              <div className="flex flex-col items-center text-white">
+              <div className="flex flex-col lg:items-center text-white">
                 <h1 className="text-[27px] xl:text-[42px] 2xl:text-[80px]">
                   Quasar
                 </h1>
@@ -42,7 +42,7 @@ export default function Contacts() {
               программного обеспечения. ОКВЭД Информационные технологии: 26.20;
               33.20; 43.22; 43.21; 61.10; 62.02; 62.09; 63.11; 63.11.1; 71.20.
             </ContactCard>
-            <div className="flex gap-x-5">
+            <div className="flex flex-col lg:flex-row gap-x-5">
               <ContactCard className="mb-5 flex flex-col gap-y-1 text-[16px] text-white lg:text-[20px]">
                 <span className="font-semibold">Контактный телефон:</span>
                 <a href="tel:89852294724">+7 (985) 229-47-24</a>
@@ -55,10 +55,10 @@ export default function Contacts() {
               </ContactCard>
             </div>
           </div>
-          <div className="w-full overflow-hidden lg:max-h-full">
+          <div className="w-full overflow-hidden h-[400px] lg:max-h-full">
             <iframe
               src="https://yandex.ru/map-widget/v1/?ll=37.639177%2C55.748493&z=16.93&pt=37.639177,55.748493,pm2rdm"
-              width="560"
+              width="300"
               allowFullScreen={true}
               className="pointer-events-none h-full w-full lg:max-h-full"
             />

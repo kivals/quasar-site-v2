@@ -5,7 +5,7 @@ import ConsultForm from "@/components/consult-form";
 
 export default function Consultation() {
   return (
-    <section className="mb-28 lg:bg-[url('/images/bg/consult-bg.png')]">
+    <section className="mb-5 lg:mb-28 lg:bg-[url('/images/bg/consult-bg.png')]">
       <Container>
         <SectionTitle>Проконсультируйтесь со cпециалистом</SectionTitle>
         <div className="flex gap-8">

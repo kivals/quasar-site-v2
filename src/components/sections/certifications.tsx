@@ -4,7 +4,7 @@ import CertificationsCarousel from "@/components/certifications-carousel";
 
 export default function Certifications() {
   return (
-    <section className="mb-28">
+    <section className="mb-5 lg:mb-28">
       <Container>
         <SectionTitle>Свидетельства ФИПС о гос. регистрации</SectionTitle>
 

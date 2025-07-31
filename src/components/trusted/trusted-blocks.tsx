@@ -11,11 +11,11 @@ import { cn } from "@/shared/lib/utils";
 
 const logos = [
   "/images/trusted/minstroy.png",
+  "/images/trusted/trance-mash.jpg",
   "/images/trusted/gbu.png",
   "/images/trusted/iskra.jpg",
   "/images/trusted/laonit.png",
   "/images/trusted/mei.png",
-  "/images/trusted/trance-mash.jpg",
 ];
 
 function TrustedBlocks() {
@@ -28,7 +28,7 @@ function TrustedBlocks() {
 
 function TrustedItem({ src }: { src: string }) {
   return (
-    <div className="flex items-center justify-center overflow-clip rounded-[20px] bg-white p-8 transition duration-300 hover:shadow-lg lg:size-[250px] 2xl:size-[250px]">
+    <div className="flex size-[200px] items-center justify-center overflow-clip rounded-[20px] bg-white p-8 transition duration-300 hover:shadow-lg lg:size-[250px] 2xl:size-[250px]">
       <Image
         src={src}
         alt="MinStroy logo"

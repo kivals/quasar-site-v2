@@ -50,16 +50,16 @@ export default function BurgerMenu({ classNames }: ClassNames) {
               </h1>
             </div>
           </SheetTitle>
-          <SheetDescription className="text-[20px]">
+          <SheetDescription className="text-[24px]">
             Системный подход к разработке программного обеспечения
           </SheetDescription>
         </SheetHeader>
         <Nav
-          containerClassNames="px-4 flex flex-col gap-y-4 text-[40px]"
+          containerClassNames="px-4 flex flex-col gap-y-4 text-[30px]"
           itemClassNames="font-medium"
           onLinkClick={handleClose}
         />
-        <SheetFooter>
+        <SheetFooter className="text-[16px]">
           <Button className="h-[50px] rounded-[20px] font-semibold text-white">
             Обратная связь
           </Button>

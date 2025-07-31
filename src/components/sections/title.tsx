@@ -12,12 +12,12 @@ export default function Title() {
         </h2>
       </Container>
 
-      <div className="relative mt-2 overflow-hidden pb-16 lg:pb-28 xl:-mt-12 2xl:-mt-16 2xl:pb-32">
-        <Globe className="" />
+      <div className="relative overflow-hidden pb-16 lg:pb-28 xl:-mt-12 2xl:-mt-16 2xl:pb-32">
+        <Globe />
         <Container>
           <div
             id="company"
-            className="lg-mt-70 mt-40 flex flex-col gap-x-3 rounded-[40px] bg-white pt-5 pb-8.5 drop-shadow-[0_0_20px_#34538980] lg:mt-[350px] lg:flex-row lg:drop-shadow-[0_0_30px_#34538980] xl:mt-[350px] xl:flex xl:p-20 2xl:mt-[450px] 2xl:drop-shadow-[0_0_50px_#34538980]"
+            className="lg-mt-70 mt-30 flex flex-col gap-x-3 rounded-[40px] bg-white pt-5 pb-8.5 drop-shadow-[0_0_20px_#34538980] lg:mt-[350px] lg:flex-row lg:drop-shadow-[0_0_30px_#34538980] xl:mt-[350px] xl:flex xl:p-20 2xl:mt-[450px] 2xl:drop-shadow-[0_0_50px_#34538980]"
           >
             <div className="flex-1">
               <div className="grid w-max grid-cols-[auto_auto] items-center gap-x-7.5 max-xl:mx-auto max-xl:justify-items-center max-xl:px-13 xl:gap-x-2.5">
