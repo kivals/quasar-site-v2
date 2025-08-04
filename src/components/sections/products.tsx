@@ -76,7 +76,7 @@ function ProductModalWindow({ title, text }: { title: string; text: string }) {
         </div>
       </DialogTrigger>
 
-      <DialogContent className="flex h-[80vh] flex-col lg:max-w-[1000px]">
+      <DialogContent className="text-[18px] md:text-[24px] lg:text-[28px] flex h-[80vh] flex-col lg:max-w-[1000px]">
         <DialogTitle className="mb-4 text-center font-semibold md:text-[50px] lg:text-start lg:text-[60px]">
           {title}
         </DialogTitle>
