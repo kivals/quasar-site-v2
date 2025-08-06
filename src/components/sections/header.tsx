@@ -25,8 +25,9 @@ export const Header = () => {
           </div>
 
           <Nav
-            containerClassNames="hidden flex-wrap lg:flex items-center lg:gap-x-[20px] xl:gap-x-[24px] 2xl:gap-x-[27px]"
-            itemClassNames="2xl:text-[24px] xl:text-[20px] lg:text-[18px]"
+            containerStyles="hidden flex-wrap lg:flex items-center lg:gap-x-[20px] xl:gap-x-[24px] 2xl:gap-x-[27px]"
+            linkStyles="relative 2xl:text-[24px] xl:text-[20px] lg:text-[18px]"
+            underlineStyles="absolute left-0 top-full h-[2px] bg-blue-800 w-full"
           />
 
           <Button className="hidden rounded-[20px] font-semibold text-white lg:flex lg:h-[50px] xl:h-[60px] 2xl:h-[70px] 2xl:text-[24px]">

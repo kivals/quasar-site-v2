@@ -16,7 +16,7 @@ export function Products() {
   return (
     <section
       id="products"
-      className="mt-8.5 mb-5 lg:mb-12 lg:bg-[url('/images/bg/product-bg.png')] xl:mt-19"
+      className="pt-8.5 mb-5 lg:mb-12 lg:bg-[url('/images/bg/product-bg.png')] xl:mt-19"
     >
       <Container>
         <SectionTitle>Продукты</SectionTitle>

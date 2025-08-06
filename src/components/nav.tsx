@@ -1,4 +1,9 @@
+"use client";
+
 import { cn } from "@/shared/lib/utils";
+import Link from "next/link";
+import { motion } from "framer-motion";
+import { useHash } from "@/shared/hooks/useHash";
 
 const menuItems = [
   { name: "Компания", url: "#company" },
@@ -11,26 +16,43 @@ const menuItems = [
 ];
 
 interface MenuProps {
-  containerClassNames: string;
-  itemClassNames: string;
+  containerStyles: string;
+  linkStyles: string;
+  underlineStyles?: string;
   onLinkClick?: () => void;
 }
 
-export const Nav = ({ containerClassNames, itemClassNames, onLinkClick }: MenuProps) => {
+export const Nav = ({
+  containerStyles,
+  linkStyles,
+  underlineStyles,
+  onLinkClick,
+}: MenuProps) => {
+  const hash = useHash();
+
   return (
-    <nav className={containerClassNames}>
+    <nav className={containerStyles}>
       {menuItems.map(({ name, url }) => (
-        <a
+        <Link
           className={cn(
             "focus:text-primary hover:text-primary cursor-pointer transition duration-200",
-            itemClassNames,
+            linkStyles,
           )}
           key={name}
           href={url}
           onClick={onLinkClick}
         >
+          {url === hash && (
+            <motion.span
+              initial={{ y: "-100%" }}
+              animate={{ y: 0 }}
+              transition={{ type: "tween" }}
+              layoutId="underline"
+              className={underlineStyles}
+            />
+          )}
           {name}
-        </a>
+        </Link>
       ))}
     </nav>
   );

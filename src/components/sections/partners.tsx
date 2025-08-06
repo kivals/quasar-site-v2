@@ -18,7 +18,7 @@ const partnerLogos = [
 
 export default function Partners() {
   return (
-    <section id="partners" className="mb-5 lg:mb-28">
+    <section id="partners" className="pt-5 lg:pt-8.5 mb-5 lg:mb-28">
       <Container>
         <SectionTitle>Партнеры</SectionTitle>
         <p className="mx-auto mb-5 max-w-[1110px] text-center text-[24px] xl:text-[32px] 2xl:text-[40px]">

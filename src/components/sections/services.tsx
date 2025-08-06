@@ -20,7 +20,7 @@ export function Services() {
   return (
     <section
       id="services"
-      className="fit mt-8.5 bg-[url('/images/bg/services-bg.png')] bg-cover bg-center xl:mt-30"
+      className="fit pt-5 lg:pt-8.5 bg-[url('/images/bg/services-bg.png')] bg-cover bg-center xl:mt-30"
     >
       <Container>
         <SectionTitle>Услуги</SectionTitle>
