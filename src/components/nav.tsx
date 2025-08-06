@@ -4,6 +4,7 @@ import { cn } from "@/shared/lib/utils";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useHash } from "@/shared/hooks/useHash";
+import { usePathname } from "next/navigation";
 
 const menuItems = [
   { name: "Компания", url: "/#company" },
@@ -29,6 +30,7 @@ export const Nav = ({
   onLinkClick,
 }: MenuProps) => {
   const hash = useHash();
+  const pathname = usePathname();
 
   return (
     <nav className={containerStyles}>
@@ -42,7 +44,7 @@ export const Nav = ({
           href={url}
           onClick={onLinkClick}
         >
-          {url === hash && (
+          {(url === pathname || url === `/${hash}`) && (
             <motion.span
               initial={{ y: "-100%" }}
               animate={{ y: 0 }}
