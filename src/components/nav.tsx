@@ -6,13 +6,13 @@ import { motion } from "framer-motion";
 import { useHash } from "@/shared/hooks/useHash";
 
 const menuItems = [
-  { name: "Компания", url: "#company" },
-  { name: "Продукты", url: "#products" },
-  { name: "Услуги", url: "#services" },
-  { name: "Партнеры", url: "#partners" },
-  { name: "Новости", url: "#news" },
-  { name: "Контакты", url: "#contacts" },
-  { name: "Карьера", url: "#" },
+  { name: "Компания", url: "/#company" },
+  { name: "Продукты", url: "/#products" },
+  { name: "Услуги", url: "/#services" },
+  { name: "Партнеры", url: "/#partners" },
+  { name: "Новости", url: "/#news" },
+  { name: "Контакты", url: "/#contacts" },
+  { name: "Карьера", url: "/career" },
 ];
 
 interface MenuProps {
